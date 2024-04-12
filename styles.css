@@ -1,0 +1,74 @@
+/* General Styles */
+body {
+    background-color: black;
+    color: #00FF00; /* Green color */
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Container for Centering Content */
+.container {
+    text-align: center;
+    position: relative;    
+    height: 100vh; 
+}
+
+/* Moving Text Styles */
+.moving-text {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    animation: movetext 10s linear infinite; 
+}
+
+@keyframes movetext {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); } 
+}
+
+/* Face Styles */
+.face {
+    margin-top: 20px;
+    position: relative; 
+    text-align: center;
+}
+
+.eye {
+    width: 20px;
+    height: 20px;
+    background-color: #00FF00;
+    border-radius: 50%; 
+    display: inline-block;
+    margin: 0 5px; 
+}
+
+.mouth {
+    width: 30px;
+    height: 10px;
+    border-radius: 5px; 
+    background-color: #00FF00;
+    display: block;
+    margin: 10px auto; 
+}
+
+/* Expression Specific Styles */
+.blink {
+    height: 5px; /* Simulate a closed eye */
+}
+
+.wink { 
+    height: 15px;  /* Half-closed eye */
+    border-bottom: 2px solid #00FF00; /* Bottom curve for wink look */
+}
+
+.open {
+    width: 30px;  /* Make the mouth wider */
+}
+
+.neutral {  
+    height: 5px;  /* A straight line */
+    border-radius: 0; 
+}
